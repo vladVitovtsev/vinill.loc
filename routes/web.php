@@ -18,4 +18,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/cabinet', 'CabinetController@index');
+Route::get('/cabinet',['as' => 'cabinet', 'uses' => 'CabinetController@index']);

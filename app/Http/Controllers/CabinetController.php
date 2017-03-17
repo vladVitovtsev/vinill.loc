@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class CabinetController extends Controller
 {
 
-    /** 
+    /**
      * CabinetController constructor.
      */
     public function __construct()

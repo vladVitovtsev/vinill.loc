@@ -1,9 +1,12 @@
-@extends('layouts.app')
+@extends('cabinet.layouts.base')
 
 @section('content')
-    <div class="content">
-        <div class="title m-b-md">
-            Кабинет
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            head
+        </div>
+        <div class="panel-body">
+            body
         </div>
     </div>
 @endsection

@@ -85,9 +85,9 @@
 
     <div class="col-lg-3 col-md-3 col-xs-12">
         <ul class="nav nav-pills nav-stacked">
-            <li class="active"><a href="#">Главная</a></li>
-            <li><a href="#">Профиль</a></li>
-            <li><a href="#">Сообщение</a></li>
+            <li class="active"><a href="/">Главная</a></li>
+            <li><a href="{{ route('cabinet') }}">Кабинет</a></li>
+            <li><a href="{{ route('cabinet.add') }}">Добавить</a></li>
         </ul>
     </div>
 

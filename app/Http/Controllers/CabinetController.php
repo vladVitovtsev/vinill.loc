@@ -23,4 +23,9 @@ class CabinetController extends Controller
     {
         return view('cabinet.index');
     }
+
+    public function add()
+    {
+        return view('cabinet.add');
+    }
 }

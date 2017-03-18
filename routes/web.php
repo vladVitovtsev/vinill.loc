@@ -19,3 +19,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::get('/cabinet',['as' => 'cabinet', 'uses' => 'CabinetController@index']);
+Route::get('/cabinet/add',['as' => 'cabinet.add', 'uses' => 'CabinetController@add']);

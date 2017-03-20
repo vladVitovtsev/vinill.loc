@@ -1,4 +1,4 @@
-@extends('cabinet.layouts.base')
+@extends('layouts.app')
 
 @section('content')
     <div class="panel panel-primary">
@@ -6,7 +6,7 @@
             Информация о пластинки
         </div>
         <div class="panel-body">
-            body
+
         </div>
         <div class="panel-footer">
             footer

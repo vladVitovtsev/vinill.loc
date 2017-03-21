@@ -21,8 +21,8 @@
     </script>
 </head>
 <body>
-<div id="app">
 
+<div id="app">
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -99,6 +99,18 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-xs-12">
+                        @if (session('success'))
+                        <div class="alert alert-dismissable alert-success">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            {{ session('success') }}
+                        </div>
+                        @endif
+                        @if (session('error'))
+                            <div class="alert alert-dismissable alert-danger">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                {{ session('error') }}
+                            </div>
+                        @endif
                         @yield('content')
                     </div>
                 </div>
